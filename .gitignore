@@ -1,55 +1,28 @@
-# Prerequisites
-*.d
-
-# Object files
+# STM32CubeIDE build output
+firmware/**/Debug/
+firmware/**/Release/
+firmware/**/.metadata/
 *.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
+*.d
+*.su
 *.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+*.list
+*.elf
+*.bin
 *.hex
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Test outputs (keep folder, ignore generated files)
+reports/*
+!reports/.gitkeep
 
-# debug information files
-*.dwo
+# OS / editor
+.vscode/settings.json
+Thumbs.db
+.DS_Store
