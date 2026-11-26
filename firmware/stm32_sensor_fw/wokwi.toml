@@ -1,0 +1,7 @@
+[wokwi]
+version = 1
+firmware = 'Debug/stm32_sensor_fw.elf'
+elf = 'Debug/stm32_sensor_fw.elf'
+# Exposes the simulated UART as a network serial port for the Python tests:
+#   rfc2217://localhost:4000
+rfc2217ServerPort = 4000
